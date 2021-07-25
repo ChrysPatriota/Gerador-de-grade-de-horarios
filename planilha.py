@@ -14,16 +14,16 @@ def criarPlanilha(individuo):
     constColuna = 3
     for periodo in range(6):
         lista = []
-        for linha in range(4):
+        for linha in range(6):
             for coluna in range(5):
-                celulaLinha = linha + constLinha + periodo * 7
+                celulaLinha = linha + constLinha + periodo * 9
                 celunaColuna = coluna + constColuna
                 aula = aulaInfo(individuo[periodo][coluna + linha * 5])
                 celula = ws.cell(row=celulaLinha, column=celunaColuna, value=aula)
                 celula.alignment = Alignment(wrapText=True, horizontal='center', vertical='center')
 
-                ws.row_dimensions[celula.row].height = 60
-                ws.column_dimensions[str(celula.column_letter)].width = 38
+                ws.row_dimensions[celula.row].height = 120
+                ws.column_dimensions[str(celula.column_letter)].width = 21
 
                 if individuo[periodo][coluna + linha * 5]['disciplina'] is not None:
                     disciplina = individuo[periodo][coluna + linha * 5]['disciplina']['nome']
@@ -44,8 +44,8 @@ def criarPlanilha(individuo):
                                                                   color='000000'))
 
     for periodo in range(6):
-        for linha in range(4):
-            celulaLinha = linha + constLinha + periodo * 7
+        for linha in range(6):
+            celulaLinha = linha + constLinha + periodo * 9
             celula = ws.cell(row=celulaLinha, column=2, value=horarios(linha))
             celula.alignment = Alignment(wrapText=True, horizontal='center', vertical='center')
 
@@ -68,7 +68,7 @@ def criarPlanilha(individuo):
     for periodo in range(6):
         for coluna in range(5):
             celulaColuna = coluna + constColuna
-            celulaLinha = constLinha + periodo * 7 - 1
+            celulaLinha = constLinha + periodo * 9 - 1
 
             celula = ws.cell(row=celulaLinha, column=celulaColuna, value=dias(coluna))
 
@@ -92,7 +92,7 @@ def criarPlanilha(individuo):
             # ws[celula.coordinate].fill = PatternFill(start_color=cor, fill_type='solid')
 
     for periodo in range(6):
-        celulaLinha = constLinha + periodo * 7 - 2
+        celulaLinha = constLinha + periodo * 9 - 2
         inicialCelula = ws.cell(row=celulaLinha, column=constColuna)
         finalCelula = ws.cell(row=celulaLinha, column=constColuna + 4)
 
@@ -139,8 +139,12 @@ def horarios(linha):
         return '9:45 - 11-35'
     elif linha == 2:
         return '13:55 - 15:45'
-    else:
+    elif linha == 3:
         return '15:45 - 17:35'
+    elif linha == 4:
+        return '18:55 - 20:45'
+    else:
+        return '20:45 - 22:35'
 
 
 def dias(coluna):

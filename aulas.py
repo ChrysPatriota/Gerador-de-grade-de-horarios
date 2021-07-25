@@ -122,77 +122,77 @@ disciplina_51 = {'nome': 'Qualidade de Software', 'semestre': 6, 'cargaHoraria':
 # Professores que dam aula durante o primeiro e sexto semestre
 
 professor_0 = {'nome': 'Dyego Magno Oliveira Souza',
-               'disponibilidade': [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1]}
+               'disponibilidade': [0, 3]}
 professor_1 = {'nome': 'Samara Martins Nascimento',
-               'disponibilidade': [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1]}
+               'disponibilidade': [5]}
 professor_2 = {'nome': 'Bruno Fontes de Sousa',
-               'disponibilidade': [0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1]}
+               'disponibilidade': [0]}
 professor_3 = {'nome': 'Kátia Cilene da Silva Santos',
-               'disponibilidade': [1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1]}
+               'disponibilidade': [0]}
 professor_4 = {'nome': 'Reudismam Rolim de Sousa',
-               'disponibilidade': [1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1]}
+               'disponibilidade': [0,5]}
 professor_5 = {'nome': 'Lenardo Chaves e Silva',
-               'disponibilidade': [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1]}
+               'disponibilidade': [0,3]}
 professor_6 = {'nome': 'Carla Daniele Saraiva Bertuleza',
-               'disponibilidade': [1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1]}
+               'disponibilidade': [0]}
 professor_7 = {'nome': 'Thiago Pereira Rique',
-               'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0]}
+               'disponibilidade': [1,2]}
 professor_8 = {'nome': 'Paulo Henrique das Chagas Silva',
-               'disponibilidade': [1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1]}
+               'disponibilidade': [1]}
 professor_9 = {'nome': 'Josenildo Ferreira Galdino',
-               'disponibilidade': [0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1]}
+               'disponibilidade': [2]}
 professor_10 = {'nome': 'Vinícius Samuel Valério de Souza',
-                'disponibilidade': [1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1]}
+                'disponibilidade': [1,3,4]}
 professor_11 = {'nome': 'Thatyara Freire de Souza',
-                'disponibilidade': [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1]}
+                'disponibilidade': [1]}
 professor_12 = {'nome': 'Anderson Queiroz Lemos',
-                'disponibilidade': [1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]}
+                'disponibilidade': [1]}
 professor_13 = {'nome': 'Glauber Barreto Luna',
-                'disponibilidade': [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1]}
+                'disponibilidade': [1]}
 professor_14 = {'nome': 'Walber José Adriano Silva',
-                'disponibilidade': [1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1]}
+                'disponibilidade': [2,4,5]}
 professor_15 = {'nome': 'Claudio Andrés Callejas Olguín',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1]}
-professor_16 = {'nome': '‪Antonio Diego Silva Farias',
-                'disponibilidade': [1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1]}
-professor_17 = {'nome': '‪Lauro César Bezerra Nogueira',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_18 = {'nome': '‪Laysa Mabel de Oliveira Fontes',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_19 = {'nome': '‪Beatriz Ferraz Martins',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_20 = {'nome': '‪Hidalyn Theodory Clemente Mattos De Souza',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [2,3]}
+professor_16 = {'nome': 'Antonio Diego Silva Farias',
+                'disponibilidade': [2]}
+professor_17 = {'nome': 'Lauro César Bezerra Nogueira',
+                'disponibilidade': [2]}
+professor_18 = {'nome': 'Laysa Mabel de Oliveira Fontes',
+                'disponibilidade': [3,4,5]}
+professor_19 = {'nome': 'Beatriz Ferraz Martins',
+                'disponibilidade': [3]}
+professor_20 = {'nome': 'Hidalyn Theodory Clemente Mattos De Souza',
+                'disponibilidade': [3]}
 professor_21 = {'nome': 'Sharon Dantas Da Cunha',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [4]}
 professor_22 = {'nome': 'Kyteria Sabina Lopes De Figueredo',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_23 = {'nome': '‪Wallace Duarte De Holanda',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_24 = {'nome': '‪Marco Diego Aurélio Mesquita',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_25 = {'nome': '‪Claudio de Souza Rocha',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
-professor_26 = {'nome': '‪Ádller de Oliveira Guimarães',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [3]}
+professor_23 = {'nome': 'Wallace Duarte De Holanda',
+                'disponibilidade': [3,5]}
+professor_24 = {'nome': 'Marco Diego Aurélio Mesquita',
+                'disponibilidade': [0, 4]}
+professor_25 = {'nome': 'Claudio de Souza Rocha',
+                'disponibilidade': [4]}
+professor_26 = {'nome': 'Ádller de Oliveira Guimarães',
+                'disponibilidade': [4]}
 professor_27 = {'nome': 'Pedro Thiago Valerio De Souza',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [4]}
 professor_28 = {'nome': 'Alysson Filgueira Milanez',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [4]}
 professor_29 = {'nome': 'José Wagner Cavalcanti Silva',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [3,5]}
 professor_30 = {'nome': 'Rodrigo Soares Semente',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [5]}
 professor_31 = {'nome': 'Felipe Torres Leite',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [5]}
 professor_32 = {'nome': 'Tycianne Janynne de Oliveira Cabral',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [3]}
 professor_33 = {'nome': 'Gabriel Caldas Barros e Sá',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [0,1]}
 professor_34 = {'nome': 'Kennedy Reurison Lopes',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [1]}
 professor_35 = {'nome': 'Otávio Paulino Lavor',
-                'disponibilidade': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]}
+                'disponibilidade': [1]}
 
 # aulas (Disciplina + Professores)
 
@@ -248,7 +248,7 @@ aula_35 = {'disciplina': disciplina_35, 'professor': [professor_25]}
 
 # Engenharia de computação
 aula_36 = {'disciplina': disciplina_36, 'professor': [professor_21]}
-aula_37 = {'disciplina': disciplina_37, 'professor': [professor_11]}
+aula_37 = {'disciplina': disciplina_37, 'professor': [professor_21]}
 aula_38 = {'disciplina': disciplina_38, 'professor': [professor_26]}
 aula_39 = {'disciplina': disciplina_39, 'professor': [professor_27]}
 
@@ -273,7 +273,6 @@ aula_50 = {'disciplina': disciplina_50, 'professor': [professor_23]}
 aula_51 = {'disciplina': disciplina_51, 'professor': [professor_1]}
 
 # aulas do semeste
-
 aula = [aula_0, aula_1, aula_2, aula_3, aula_4, aula_5, aula_6,
         aula_7, aula_8, aula_9, aula_10, aula_11, aula_12, aula_13,
         aula_14, aula_15, aula_16, aula_17, aula_18, aula_19, aula_20,

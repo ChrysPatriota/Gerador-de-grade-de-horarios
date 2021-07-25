@@ -7,7 +7,7 @@ pesos = [10 ** 0, 10 ** 1, 10 ** 2, 10 ** 3]
 def avaliar(individuo):
     fitness = 0
     for semestre in range(6):
-        for horario in range(4):
+        for horario in range(6):
             for dia in range(5):
                 if individuo[semestre][dia + horario * 5]['disciplina'] is not None:
                     fitness += avaliarAula(semestre, dia, horario, individuo)
@@ -21,6 +21,7 @@ def avaliarAula(semestre, dia, horario, individuo):
     fitness = 0
 
     fitness += choqueProfessor(semestre, dia, horario, individuo)
+    fitness += horarioImpropio(horario)
 
     # fitness += disponibilidadeProfessor(semestre, dia , horario, individuo)
 
@@ -44,7 +45,9 @@ def choqueProfessor(semestre, dia, horario, individuo):
 
     professor = individuo[semestre][dia + horario * 5]['professor']['nome']
 
-    for semestre_it in range(6):
+    disp = individuo[semestre][dia + horario * 5]['professor']['disponibilidade']
+
+    for semestre_it in disp:
 
         if semestre_it != semestre and individuo[semestre_it][dia + horario * 5]['disciplina'] is not None:
 
@@ -81,10 +84,16 @@ def ocorrenciaJanelas(individuo):
             aula_tarde_primeira = individuo[semestre][aula + 10]['disciplina']
             aula_tarde_segunda = individuo[semestre][aula + 15]['disciplina']
 
+            aula_noite_primeira = individuo[semestre][aula + 20]['disciplina']
+            aula_noite_segunda = individuo[semestre][aula + 25]['disciplina']
+
             if aula_manha_primeira is None and aula_manha_segunda is not None:
                 fitness += pesos[0]
 
             if aula_tarde_primeira is None and aula_tarde_segunda is not None:
+                fitness += pesos[0]
+
+            if aula_noite_primeira is None and aula_noite_segunda is not None:
                 fitness += pesos[0]
 
     return fitness
@@ -97,7 +106,7 @@ def aulasMesmoDia(semestre, dia, horario, individuo):
     fitness = 0
     contador = 1
 
-    for horario_it in range(4):
+    for horario_it in range(6):
 
         if horario_it != horario:
 
@@ -125,7 +134,33 @@ def aulasTurnosDiferente(semestre, dia, horario, individuo):
 
         if horario == 0 or horario == 1:
 
-            for horario_it in range(2, 4):
+            for horario_it in range(2, 6):
+
+                aula_it = individuo[semestre][dia_it + horario_it * 5]
+
+                if aula_it['disciplina'] is not None:
+
+                    disciplina_it = aula_it['disciplina']['nome']
+                    turma_it = aula_it['turma']
+                    if disciplina_it == disciplina and turma_it == turma:
+                        fitness += pesos[2]
+                        contador += 1
+
+        elif horario == 2 or horario == 3:
+
+            for horario_it in range(2):
+
+                aula_it = individuo[semestre][dia_it + horario_it * 5]
+
+                if aula_it['disciplina'] is not None:
+
+                    disciplina_it = aula_it['disciplina']['nome']
+                    turma_it = aula_it['turma']
+                    if disciplina_it == disciplina and turma_it == turma:
+                        fitness += pesos[2]
+                        contador += 1
+
+            for horario_it in range(4, 6):
 
                 aula_it = individuo[semestre][dia_it + horario_it * 5]
 
@@ -138,8 +173,7 @@ def aulasTurnosDiferente(semestre, dia, horario, individuo):
                         contador += 1
 
         else:
-
-            for horario_it in range(2):
+            for horario_it in range(4):
 
                 aula_it = individuo[semestre][dia_it + horario_it * 5]
 
@@ -165,7 +199,7 @@ def aulasDistantes(semestre, dia, horario, individuo):
 
         for dia_it in range(3, 5):
 
-            for horario_it in range(4):
+            for horario_it in range(6):
 
                 aula_it = individuo[semestre][dia_it + horario_it * 5]
 
@@ -181,7 +215,7 @@ def aulasDistantes(semestre, dia, horario, individuo):
 
         for dia_it in range(2):
 
-            for horario_it in range(4):
+            for horario_it in range(6):
 
                 aula_it = individuo[semestre][dia_it + horario_it * 5]
 
@@ -239,5 +273,13 @@ def densidadeAulaDia(individuo):
                     contador += 1
             if contador > densidade:
                 fitness += pesos[1]
+
+    return fitness
+
+
+def horarioImpropio(horario):
+    fitness = 0
+    if horario == 4 or horario == 5:
+        fitness += pesos[3]
 
     return fitness

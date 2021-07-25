@@ -12,15 +12,16 @@ def crossOverIndividuo(pai_1, pai_2):
 
 
 def crossOver(pai_1, pai_2):
-    filho_1 = list(np.full(20, fill_value={'disciplina': None}))
+    filho_1 = list(np.full(len(pai_1), fill_value={'disciplina': None}))
 
-    mask = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    mask = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,0 ,0 ,0 ,0 ,0 , 1, 1, 1, 1, 1]
+    mask = list(np.full(len(pai_1)//2, fill_value=1)) + list(np.full(len(pai_1)//2, fill_value=0))
 
     np.random.shuffle(mask)
 
     delete_pai_1 = []
 
-    for aula in range(20):
+    for aula in range(len(filho_1)):
         if mask[aula] == 1:
             filho_1[aula] = pai_1[aula]
             delete_pai_1.append(aula)
@@ -38,7 +39,7 @@ def crossOver(pai_1, pai_2):
 
     contador_filho_1 = 0
 
-    for aula in range(20):
+    for aula in range(len(filho_1)):
         if mask[aula] != 1:
             filho_1[aula] = filho_1_rest[contador_filho_1]
             contador_filho_1 += 1

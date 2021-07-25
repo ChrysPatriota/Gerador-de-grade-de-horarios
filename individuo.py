@@ -31,7 +31,7 @@ def criarIndividuo(aulas):
 
 # criar semestre individuais
 def criarSemestre(aulas, semestre):
-    gradeHoraria = numpy.full(20, fill_value={'disciplina': None})
+    gradeHoraria = numpy.full(30, fill_value={'disciplina': None})
 
     ID = 0
     for aula in aulas:
@@ -51,7 +51,7 @@ def criarSemestre(aulas, semestre):
             if aula['disciplina']['cargaHoraria'] == 60 and aula['disciplina']['semestre'] == semestre:
 
                 while True:
-                    horario = rd.randint(4)
+                    horario = rd.randint(6)
                     dia = rd.randint(5)
 
                     if gradeHoraria[dia + horario * 5]['disciplina'] is None:
@@ -65,7 +65,7 @@ def criarSemestre(aulas, semestre):
                 ID += 1
 
                 while True:
-                    horario = rd.randint(4)
+                    horario = rd.randint(6)
                     dia = rd.randint(5)
 
                     if gradeHoraria[dia + horario * 5]['disciplina'] is None:
@@ -81,7 +81,7 @@ def criarSemestre(aulas, semestre):
             elif aula['disciplina']['cargaHoraria'] == 90 and aula['disciplina']['semestre'] == semestre:
 
                 while True:
-                    horario = rd.randint(4)
+                    horario = rd.randint(6)
                     dia = rd.randint(5)
 
                     if gradeHoraria[dia + horario * 5]['disciplina'] is None:
@@ -95,7 +95,7 @@ def criarSemestre(aulas, semestre):
                 ID += 1
 
                 while True:
-                    horario = rd.randint(4)
+                    horario = rd.randint(6)
                     dia = rd.randint(5)
 
                     if gradeHoraria[dia + horario * 5]['disciplina'] is None:
@@ -109,7 +109,7 @@ def criarSemestre(aulas, semestre):
                 ID += 1
 
                 while True:
-                    horario = rd.randint(4)
+                    horario = rd.randint(6)
                     dia = rd.randint(5)
 
                     if gradeHoraria[dia + horario * 5]['disciplina'] is None:
@@ -125,7 +125,7 @@ def criarSemestre(aulas, semestre):
             elif aula['disciplina']['cargaHoraria'] == 30 and aula['disciplina']['semestre'] == semestre:
 
                 while True:
-                    horario = rd.randint(4)
+                    horario = rd.randint(6)
                     dia = rd.randint(5)
 
                     if gradeHoraria[dia + horario * 5]['disciplina'] is None:
@@ -138,7 +138,7 @@ def criarSemestre(aulas, semestre):
 
                 ID += 1
 
-    for restID in range(20):
+    for restID in range(30):
         if gradeHoraria[restID]['disciplina'] is None:
             copy = gradeHoraria[restID].copy()
             copy['ID'] = ID

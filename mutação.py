@@ -11,7 +11,7 @@ def mutacao(individuo, probabilidadeMutacao):
     if escolhido[0]:
         semestre = np.random.randint(6)
 
-        horario = np.random.choice(np.arange(20), size=2, replace=False)
+        horario = np.random.choice(np.arange(len(individuo[0])), size=2, replace=False)
 
         parte_1 = individuo[semestre][horario[0]]
         parte_2 = individuo[semestre][horario[1]]
