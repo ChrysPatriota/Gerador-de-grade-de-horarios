@@ -6,9 +6,6 @@ def selecao(populacao, fitness, qtd):
 
     populacaoIndex = np.arange(qtd)
 
-    if probabilidade == 'break':
-        return probabilidade
-
     escolhidos = np.random.choice(populacaoIndex, size=2, replace=False, p=probabilidade)
 
     retorno = []
