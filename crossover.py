@@ -14,7 +14,6 @@ def crossOverIndividuo(pai_1, pai_2):
 def crossOver(pai_1, pai_2):
     filho_1 = list(np.full(len(pai_1), fill_value={'disciplina': None}))
 
-    mask = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,0 ,0 ,0 ,0 ,0 , 1, 1, 1, 1, 1]
     mask = list(np.full(len(pai_1)//2, fill_value=1)) + list(np.full(len(pai_1)//2, fill_value=0))
 
     np.random.shuffle(mask)
@@ -28,14 +27,14 @@ def crossOver(pai_1, pai_2):
 
     pai_1_deleted = np.delete(pai_1, delete_pai_1)
 
-    pai_1_deleted_index = []
+    pai_2_index = []
 
     pai_2_array = np.array(pai_2)
 
     for i in pai_1_deleted:
-        pai_1_deleted_index.append(np.where(pai_2_array == i)[0][0])
+        pai_2_index.append(np.where(pai_2_array == i)[0][0])
 
-    filho_1_rest = [x for _, x in sorted(zip(pai_1_deleted_index, pai_1_deleted))]
+    filho_1_rest = [x for _, x in sorted(zip(pai_2_index, pai_1_deleted))]
 
     contador_filho_1 = 0
 
@@ -45,15 +44,3 @@ def crossOver(pai_1, pai_2):
             contador_filho_1 += 1
 
     return filho_1
-
-
-'''
-a = np.array(['A','B','Eu','Vyrninha','C','D'])
-b = np.array(['C','B','D','A','Vyrninha','Eu'])
-
-
-filhos = crossOver(a,b)
-teste = np.where(a == 'C')[0][0]
-print(teste)
-print(filhos)
-'''
