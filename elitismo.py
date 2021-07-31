@@ -42,14 +42,3 @@ def elitismo(populacaoAntiga, fitnessAntiga, populacaoNova, fitnessNova, qtd, po
         populacaoElitismo.append(populacaoAntiga[populacaoAntigaZipped[i][1]])
 
     return [populacaoElitismo + populacaoNova[qtdElitismo:qtd], fitnessElitismo + fitnessNova[qtdElitismo:qtd]]
-
-
-'''
-a = [1, 2, 3]
-b = ['A', 'B', 'C']
-
-c = [2, 3, 4]
-d = ['D', 'E', 'F']
-
-print(elitismo(b, a, d, c, 3))
-'''
