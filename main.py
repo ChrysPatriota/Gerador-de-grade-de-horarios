@@ -2,7 +2,7 @@ import time
 
 import matplotlib.pyplot as plt
 
-from aulas import aula
+from aulas_TI import aula_TI
 from crossover import crossOverIndividuo as crossOver
 from elitismo import elitismo
 from individuo import criarPopulacao
@@ -14,40 +14,41 @@ from seleção import selecao
 
 inicio = time.time()
 
-qtd = 100
-geracoes = 2000
+qtd = 20
+geracoes = 5000
 probabilidadeMutacao = 0.1
 porcentagemElitismo = 0.1
 
-populacao, fitness = criarPopulacao(aula, qtd)
+populacao, fitness = criarPopulacao(aula_TI, qtd)
 
 media = []
 menor = []
 
 for geracao in range(geracoes):
-    if fitness[0] != 0:
-        populacaoNova = []
-        fitnessNova = []
 
-        for _ in range(qtd):
-            pais = selecao(populacao, fitness, qtd)
-
-            filho_1 = crossOver(pais[0], pais[1])
-
-            filho_1 = mutacao(filho_1, probabilidadeMutacao)
-
-            filho_1 = repair(filho_1)
-
-            populacaoNova.append(filho_1)
-            fitnessNova.append(avaliar(filho_1))
-
-        populacao, fitness = elitismo(populacao, fitness, populacaoNova, fitnessNova, qtd, porcentagemElitismo)
-        print(geracao)
-        print(fitness)
-        media.append(sum(fitness) / qtd)
-        menor.append(min(fitness))
-    else:
+    if fitness[0] == 0:
         break
+
+    populacaoNova = []
+    fitnessNova = []
+
+    for _ in range(qtd):
+        pais = selecao(populacao, fitness, qtd)
+
+        filho_1 = crossOver(pais[0], pais[1])
+
+        filho_1 = mutacao(filho_1, probabilidadeMutacao)
+
+        filho_1 = repair(filho_1)
+
+        populacaoNova.append(filho_1)
+        fitnessNova.append(avaliar(filho_1))
+
+    populacao, fitness = elitismo(populacao, fitness, populacaoNova, fitnessNova, qtd, porcentagemElitismo)
+    print(geracao)
+    print(fitness)
+    media.append(sum(fitness) / qtd)
+    menor.append(min(fitness))
 
 winner = populacao[0]
 

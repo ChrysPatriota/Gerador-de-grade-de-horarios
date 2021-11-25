@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab024f62-cbbb-43cc-b624-912dd04581d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 18-30-27.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 18-51-01.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 18-58-15.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 19-05-43.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 19-14-02.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 19-27-48.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 19-36-54.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 19-54-34.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 20-04-00.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/grade_de_horarios 27-04-2021 20-21-49.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dados do TCC/teste_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gerador de grade de horários.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 22-06-2021 21-51-31.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 18-30-27.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 18-51-01.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 18-58-15.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 19-05-43.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 19-14-02.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 19-27-48.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 19-36-54.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 19-54-34.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 20-04-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/grade_de_horarios 27-04-2021 20-21-49.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade de Horarios/teste_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/aulas_TI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21NpB7FUR2fthZH0nbsOLKiaNBP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab024f62-cbbb-43cc-b624-912dd04581d7" name="Changes" comment="" />
+      <created>1637791260634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637791260634</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
