@@ -14,8 +14,8 @@ from seleção import selecao
 
 inicio = time.time()
 
-qtd = 20
-geracoes = 5000
+qtd = 100
+geracoes = 2000
 probabilidadeMutacao = 0.1
 porcentagemElitismo = 0.1
 
